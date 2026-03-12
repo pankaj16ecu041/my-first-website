@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videograph | Portfolio Template</title>
+
+    <!-- 1. Google Fonts (Play font matches the template style) -->
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+
+    <!-- 2. Bootstrap 4 CSS for Layout/Grid -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com">
+
+    <!-- 3. Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+
+    <style>
+        /* CSS STYLES */
+        body {
+            background-color: #0b0c10; /* Dark background */
+            color: #ffffff;
+            font-family: 'Play', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-section {
+            padding: 100px 0;
+            /* Replace the URL below with your actual image path */
+            background: linear-gradient(rgba(11, 12, 16, 0.8), rgba(11, 12, 16, 0.8)),
+                        url('https://images.unsplash.com');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title {
+            color: #00f2ff; /* Cyan accent */
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .main-heading {
+            font-weight: 700;
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 30px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 40px 30px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            height: 100%;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            background: rgba(0, 242, 255, 0.05);
+            border-color: #00f2ff;
+            transform: translateY(-5px);
+        }
+
+        .icon-box {
+            font-size: 2.5rem;
+            color: #00f2ff;
+            margin-bottom: 20px;
+        }
+
+        .service-card h5 {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .service-card p {
+            color: #a9abb0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .btn-outline-custom {
+            border: 2px solid #00f2ff;
+            color: #00f2ff;
+            padding: 12px 30px;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            border-radius: 0;
+            transition: 0.3s;
+        }
+
+        .btn-outline-custom:hover {
+            background-color: #00f2ff;
+            color: #0b0c10;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .main-heading { font-size: 2.5rem; }
+            .hero-section { padding: 60px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+               
+                <!-- Left Content -->
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <span class="section-title">Our Services</span>
+                    <h1 class="main-heading">WHAT WE DO?</h1>
+                    <p class="mb-5" style="color: #a9abb0; max-width: 400px;">
+                        If you are looking for a professional videographer to capture your moments, you are in the right place. We specialize in high-end visual storytelling.
+                    </p>
+                    <a href="#" class="btn btn-outline-custom">View All Services</a>
+                </div>
+               
+                <!-- Right Services Grid -->
+                <div class="col-lg-7">
+                    <div class="row">
+                        <!-- Card 1 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="service-card">
+                                <div class="icon-box"><i class="fas fa-layer-group"></i></div>
+                                <h5>Motion Graphics</h5>
+                                <p>Whether you’re looking to entertain or educate, motion graphics are the way to go.</p>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="service-card">
+                                <div class="icon-box"><i class="fas fa-edit"></i></div>
+                                <h5>Scripting & Editing</h5>
+                                <p>We provide full post-production services including color grading and sound design.</p>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="service-card">
+                                <div class="icon-box"><i class="fas fa-video"></i></div>
+                                <h5>Video Distribution</h5>
+                                <p>Optimizing your content for platforms like YouTube, Vimeo, and social media.</p>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="service-card">
+                                <div class="icon-box"><i class="fas fa-desktop"></i></div>
+                                <h5>Video Hosting</h5>
+                                <p>Seamlessly integrate your videos into your website with high-speed hosting solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

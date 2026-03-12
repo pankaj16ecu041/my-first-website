@@ -1,0 +1,70 @@
+
+### --- OS Specifics ---
+.DS_Store
+Thumbs.db
+.directory
+
+### --- IDE / Editor Junk ---
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+### --- Terraform & Infrastructure as Code ---
+# Local build directory
+.terraform/
+
+# State files (NEVER commit these if they contain secrets)
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+
+# Sensitive variables
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+
+### --- Docker & Containers ---
+.docker/
+# Avoid committing large build contexts
+**/crash.log
+
+### --- Secrets & Env (CRITICAL) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pub
+secrets.yaml
+kubeconfig
+.kube/
+
+### --- Build & Dependency Management ---
+node_modules/
+dist/
+build/
+bin/
+obj/
+vendor/
+.pnpm-store/
+.npm/
+
+### --- Python / Scripting ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+.pytest_cache/
+
+### --- Logs & Diagnostics ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.terraform.lock.hcl
